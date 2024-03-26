@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        jdbc:
+          batch_size: 30
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3311/factory?serverTimezone=UTC&cachePrepStmts=true&useServerPrepStmts=true&rewriteBatchedStatements=true
+    username: root
+    password: 1234
+    hikari:
+      minimum-idle: 50
+      maximum-pool-size: 50
+      connection-timeout: 1500

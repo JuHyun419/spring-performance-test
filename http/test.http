@@ -1,0 +1,52 @@
+### bulk save
+POST http://localhost:8080/api/v1/bulk-issue
+Content-Type: application/json
+
+{
+  "count": 10000
+}
+
+### jpa save
+POST http://localhost:8080/api/v1/jpa-issue-save
+Content-Type: application/json
+
+{
+"count": 10000
+}
+
+### jpa saveAll
+POST http://localhost:8080/api/v1/jpa-issue-saveAll
+Content-Type: application/json
+
+{
+"count": 10000
+}
+
+
+### admit
+POST http://localhost:8080/api/v1/admit
+Content-Type: application/json
+
+{
+  "couponNumber": "021355961325",
+  "amountPrice": 50000
+}
+
+### optimisticLock-admit
+POST http://localhost:8080/api/v1/optimisticLock-admit
+Content-Type: application/json
+
+{
+  "couponNumber": "021386432600",
+  "amountPrice": 1
+}
+
+### pessimisticLock-admit
+POST http://localhost:8080/api/v1/pessimisticLock-admit
+Content-Type: application/json
+
+{
+  "couponNumber": "000005331429",
+  "amountPrice": 1
+}
+
